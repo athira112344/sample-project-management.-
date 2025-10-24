@@ -26,3 +26,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+try:
+    score = float(input("Enter your score (0-100): "))
+    if score < 0 or score > 100:
+        print("Invalid score. Please enter a score between 0 and 100.")
+    else:
+        # calculate grade
+except ValueError:
+    print("Invalid input. Please enter a number.")
